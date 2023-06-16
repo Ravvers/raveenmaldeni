@@ -1,13 +1,19 @@
 import React from "react";
-import "./App.css";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./navigation/router";
+import { Outlet } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
+import { theme } from "./styles/colourPalette";
+import { Header } from "./components/Header/Header";
 
 function App() {
 	return (
-		<div className="App">
-			<RouterProvider router={router}></RouterProvider>
+		<div
+			style={{
+				background: theme.body.background,
+				minHeight: "100vh"
+			}}
+		>
+			<Header />
+			<Outlet />
 			<Footer />
 		</div>
 	);
