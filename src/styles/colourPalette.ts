@@ -1,8 +1,8 @@
 export const colourPalette = {
 	lightBlue: "#30BCED",
-	gray: "D9D9D9",
-	black: "000000",
-	white: "FFFAFF"
+	gray: "#D9D9D9",
+	black: "#000000",
+	white: "#FFFAFF"
 };
 
 export const theme = {
