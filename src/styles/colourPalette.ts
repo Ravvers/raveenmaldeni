@@ -43,6 +43,9 @@ export const fontSizeEm = {
 	header: {
 		navigationLink: "1.5em"
 	},
+	body: {
+		title: "2em"
+	},
 	footer: {
 		socialIcon: "4em",
 		linkText: "1.2em"
