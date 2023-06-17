@@ -5,17 +5,19 @@ import { StyleAttribute, css } from "glamor";
 import { theme } from "../../styles/colourPalette";
 
 export type DirectoryProps = {
-	linkStyle: StyleAttribute;
-	isHeaderDirectory?: boolean;
+	linkStyle?: StyleAttribute;
+	className?: string;
 };
 
 export const Directory = (props: DirectoryProps) => {
-	const LinkComponent = props.isHeaderDirectory ? NavLink : Link;
+	const LinkComponent =
+		props.className === "header-directory" ? NavLink : Link;
 	return (
-		<>
+		<div className={props.className}>
 			{Object.entries(routeMap).map((route) => {
 				return (
 					<LinkComponent
+						key={route[0]}
 						{...{
 							...props.linkStyle,
 							...css({
@@ -30,6 +32,6 @@ export const Directory = (props: DirectoryProps) => {
 					</LinkComponent>
 				);
 			})}
-		</>
+		</div>
 	);
 };
