@@ -5,7 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 type SocialIcon = OverridableComponent<
-	SvgIconTypeMap<Record<string, any>, "svg">
+	SvgIconTypeMap<Record<string, unknown>, "svg">
 > & {
 	muiName: string;
 };
