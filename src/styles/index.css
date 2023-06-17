@@ -5,9 +5,13 @@ body,
 	min-height: 100vh;
 	font-family: "Josefin Sans", sans-serif;
 	text-align: center;
+	overflow: hidden;
 }
 
 #header {
+}
+
+.header-directory {
 	padding-top: 5vh;
 	padding-bottom: 2%;
 	display: flex;
@@ -21,10 +25,34 @@ body,
 }
 
 #footer {
-	position: "fixed";
+	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: "100%";
+	width: 100%;
+	padding-top: 3vh;
+}
+
+.footer-directory {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: space-evenly;
+	margin: auto;
+}
+
+.socials {
+	@media screen and (min-width: 600px) {
+		width: 30%;
+	}
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+}
+
+#footer a {
+	text-decoration: none;
+	padding: 5px;
 }
 
 .title {

@@ -4,7 +4,9 @@ export const colourPalette = {
 	black: "#000000",
 	white: "#FFFAFF",
 	darkGray: "#5E5E64",
-	darkPurple: "#9E00FF"
+	darkPurple: "#9E00FF",
+	gitHubOnHover: "#f0f6fc",
+	linkedInOnHover: "#0a66c2"
 };
 
 export const theme = {
@@ -20,12 +22,29 @@ export const theme = {
 	},
 	footer: {
 		text: colourPalette.black,
-		background: colourPalette.gray
+		background: colourPalette.gray,
+		icon: {
+			color: colourPalette.black,
+			onHover: {
+				gitHub: {
+					color: colourPalette.gitHubOnHover,
+					background: colourPalette.black
+				},
+				linkedIn: {
+					color: colourPalette.linkedInOnHover,
+					background: colourPalette.white
+				}
+			}
+		}
 	}
 };
 
 export const fontSizeEm = {
 	header: {
-		navigationLink: 1.5
+		navigationLink: "1.5em"
+	},
+	footer: {
+		socialIcon: "4em",
+		linkText: "1.2em"
 	}
 };
