@@ -5,7 +5,7 @@ export const colourPalette = {
 	white: "#FFFAFF",
 	darkGray: "#5E5E64",
 	darkPurple: "#9E00FF",
-	gitHubOnHover: "#f0f6fc",
+	githubOnHover: "#f0f6fc",
 	linkedInOnHover: "#0a66c2"
 };
 
@@ -26,8 +26,8 @@ export const theme = {
 		icon: {
 			color: colourPalette.black,
 			onHover: {
-				gitHub: {
-					color: colourPalette.gitHubOnHover,
+				github: {
+					color: colourPalette.githubOnHover,
 					background: colourPalette.black
 				},
 				linkedIn: {
