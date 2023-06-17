@@ -1,8 +1,14 @@
 import React from "react";
-import { theme } from "../../styles/colourPalette";
+import { fontSizeEm, theme } from "../../styles/colourPalette";
 import { Directory } from "../Directory/Directory";
 import { CopyrightNotice } from "../CopyrightNotice/CopyrightNotice";
 import { Socials } from "../Socials/Socials";
+import { css } from "glamor";
+
+const linkStyles = css({
+	color: theme.footer.text,
+	fontSize: fontSizeEm.footer.linkText
+});
 
 export const Footer = () => {
 	return (
@@ -14,7 +20,7 @@ export const Footer = () => {
 			}}
 		>
 			<Socials />
-			<Directory linkStyle={{}} />
+			<Directory className="footer-directory" linkStyle={linkStyles} />
 			<CopyrightNotice />
 		</div>
 	);

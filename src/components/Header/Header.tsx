@@ -3,18 +3,19 @@ import { Directory } from "../Directory/Directory";
 import { fontSizeEm, theme } from "../../styles/colourPalette";
 import { css } from "glamor";
 
-const styles = css({
+const linkStyles = css({
 	color: theme.header.text,
-	fontSize: `${fontSizeEm.header.navigationLink}em`,
+	fontSize: fontSizeEm.header.navigationLink,
 	":hover": {
-		color: theme.header.linkOnHover
+		color: theme.header.linkOnHover,
+		transition: "0.5s"
 	}
 });
 
 export const Header = () => {
 	return (
 		<div id="header">
-			<Directory isHeaderDirectory linkStyle={styles} />
+			<Directory className="header-directory" linkStyle={linkStyles} />
 		</div>
 	);
 };
