@@ -13,7 +13,9 @@ type SocialIcon = OverridableComponent<
 type SocialLinkProps = {
 	SocialIcon: SocialIcon;
 	link: string;
+	/** Exposing this separately from iconStyle as the icon's size needs to be provided via sx props. */
 	iconSize?: string | number;
+	/** Style for icon, does not allow icon size changes, use iconSize prop instead. */
 	iconStyle?: StyleAttribute;
 };
 
