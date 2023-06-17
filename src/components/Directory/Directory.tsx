@@ -4,7 +4,7 @@ import { routeMap } from "../../navigation/router";
 import { StyleAttribute, css } from "glamor";
 import { theme } from "../../styles/colourPalette";
 
-export type DirectoryProps = {
+type DirectoryProps = {
 	linkStyle?: StyleAttribute;
 	className?: string;
 };
@@ -13,7 +13,11 @@ export const Directory = (props: DirectoryProps) => {
 	const LinkComponent =
 		props.className === "header-directory" ? NavLink : Link;
 	return (
-		<div className={props.className}>
+		<div
+			className={props.className}
+			role="navigation"
+			aria-label={props.className}
+		>
 			{Object.entries(routeMap).map((route) => {
 				return (
 					<LinkComponent
