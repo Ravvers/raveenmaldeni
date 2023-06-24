@@ -1,19 +1,21 @@
 import React from "react";
-import { fontSizeEm, theme } from "../../styles/colourPalette";
+import { theme } from "../../styles/colourPalette";
+import { Projects } from "../../components/Project/Projects";
+import { css } from "glamor";
 
 export const Home = () => {
 	return (
-		<div>
+		<>
 			<div
-				id="home-title"
-				style={{
-					color: theme.body.text,
-					fontSize: fontSizeEm.body.title
-				}}
+				className="title"
+				{...css({
+					color: theme.body.text
+				})}
 			>
 				<h1>Raveen Maldeni</h1>
 				<h1>I'm a developer</h1>
 			</div>
-		</div>
+			<Projects />
+		</>
 	);
 };

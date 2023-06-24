@@ -18,7 +18,11 @@ export const theme = {
 	},
 	body: {
 		background: colourPalette.lightBlue,
-		text: colourPalette.white
+		text: colourPalette.white,
+		project: {
+			social: colourPalette.white,
+			socialOnHover: colourPalette.black
+		}
 	},
 	footer: {
 		text: colourPalette.black,
@@ -42,9 +46,6 @@ export const theme = {
 export const fontSizeEm = {
 	header: {
 		navigationLink: "1.5em"
-	},
-	body: {
-		title: "2em"
 	},
 	footer: {
 		socialIcon: "4em",
