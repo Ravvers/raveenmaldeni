@@ -89,13 +89,18 @@ body,
 	transition: all 0.75s ease;
 }
 
-@media screen and (width >= 600px) {
+.project-status {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media screen and (width >= 700px) {
 	.socials {
 		width: 30%;
 	}
 }
 
-@media screen and (width <= 600px) {
+@media screen and (width <= 700px) {
 	body {
 		font-size: 0.9em;
 	}
@@ -106,5 +111,15 @@ body,
 
 	.title {
 		font-size: 1.5em;
+	}
+}
+
+@media screen and (width <= 400px) {
+	#projects {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+
+	body {
+		font-size: 0.7em;
 	}
 }

@@ -43,8 +43,11 @@ export const ProjectComponent = (props: { project: Project }) => {
 				{...css({
 					display: "none",
 					position: "absolute",
-					width: "300px",
-					zIndex: 1
+					width: "320px",
+					zIndex: 1,
+					"@media screen and (width <= 400px)": {
+						width: "260px"
+					}
 				})}
 			>
 				<h1 title={`${props.project.displayName}`}>
@@ -56,14 +59,19 @@ export const ProjectComponent = (props: { project: Project }) => {
 					enterTouchDelay={0}
 					leaveTouchDelay={2500}
 				>
-					<p>{props.project.status.phase}</p>
+					<p
+						className="project-status"
+						style={{ color: props.project.status.textColor }}
+					>
+						{props.project.status.phase}
+					</p>
 				</Tooltip>
 				{props.project.githubLink && (
 					<SocialLink
 						SocialIcon={GitHubIcon}
 						link={props.project.githubLink}
 						iconStyle={getIconStyles()}
-						iconSize={fontSizeEm.footer.socialIcon}
+						iconSize={fontSizeEm.body.projects.socialIcon}
 					/>
 				)}
 			</div>
