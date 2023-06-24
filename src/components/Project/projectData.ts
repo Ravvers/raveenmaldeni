@@ -1,0 +1,60 @@
+import {
+	Project,
+	inDesignPhase,
+	inactivePhase,
+	planningPhase
+} from "../../models/Project";
+
+const tileImageBasePath = "/assets/img/";
+
+const theorycrafter: Project = {
+	name: "theoryCrafter",
+	displayName: "Theory Crafter",
+	description:
+		"React Native app for theorising potential builds in the popular game League of Legends",
+	status: inactivePhase,
+	tileImageSrc: `${tileImageBasePath}theorycrafter.png`,
+	githubLink: "https://github.com/Ravvers/theorycrafter"
+};
+
+const paperguin: Project = {
+	name: "paperguin",
+	displayName: "paperguin",
+	description: "Brand that will represent my future projects",
+	status: planningPhase,
+	tileImageSrc: `${tileImageBasePath}paperguin.svg`,
+	tileBackgroundColor: "#FFFFFF"
+};
+
+const randomforme: Project = {
+	name: "randomforme",
+	displayName: "randomfor.me",
+	description: "Web app for random number generation and sorting",
+	status: inDesignPhase,
+	tileImageSrc: `${tileImageBasePath}randomforme.jpg`
+};
+
+const listApp: Project = {
+	name: "listApp",
+	displayName: "List App",
+	description: "A list-taking mobile app that provides the user more control",
+	status: planningPhase,
+	tileImageSrc: `${tileImageBasePath}listApp.jpg`
+};
+
+const mobileGame: Project = {
+	name: "mobileGame",
+	displayName: "Mobile Game",
+	description:
+		"Having played video-games for many years, I'm looking to share my own",
+	status: planningPhase,
+	tileImageSrc: `${tileImageBasePath}mobileGame.jpg`
+};
+
+export const projectData: Project[] = [
+	theorycrafter,
+	paperguin,
+	randomforme,
+	listApp,
+	mobileGame
+];
