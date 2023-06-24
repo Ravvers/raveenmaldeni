@@ -11,7 +11,7 @@ export const colourPalette = {
 	lightGreen: "#B2FF89",
 	lightYellow: "#FFFF89",
 	lightBlue: "#8AE6FF",
-	lightPurple: "#8AA3FF"
+	lightPurple: "#D28AFF"
 };
 
 export const theme = {
