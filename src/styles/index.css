@@ -67,6 +67,12 @@ body,
 	margin-bottom: 5vh;
 }
 
+#blog-page-text {
+	font-size: 1.4em;
+	width: 60%;
+	margin: auto;
+}
+
 #projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -112,6 +118,10 @@ body,
 
 	.title {
 		font-size: 1.5em;
+	}
+
+	#blog-page-text {
+		width: 80%;
 	}
 }
 
