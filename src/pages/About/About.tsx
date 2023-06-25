@@ -6,10 +6,10 @@ export const About = () => {
 	return (
 		<>
 			<PageTitle>
-				<h1>Hi, I'm Raveen</h1>
+				<h1>Hi, I'm Raveen.</h1>
 				<h1>
 					I like <HighlightText>software</HighlightText> and{" "}
-					<HighlightText>milkshakes.</HighlightText>
+					<HighlightText>milkshakes</HighlightText>.
 				</h1>
 			</PageTitle>
 		</>
