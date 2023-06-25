@@ -1,20 +1,15 @@
 import React from "react";
-import { theme } from "../../styles/colourPalette";
 import { Projects } from "../../components/Project/Projects";
-import { css } from "glamor";
+import { PageTitle } from "../../components/PageTitle/PageTitle";
 
 export const Home = () => {
 	return (
 		<>
-			<div
-				className="title"
-				{...css({
-					color: theme.body.text
-				})}
-			>
+			<PageTitle>
 				<h1>Raveen Maldeni</h1>
 				<h1>I'm a developer</h1>
-			</div>
+			</PageTitle>
+
 			<Projects />
 		</>
 	);
