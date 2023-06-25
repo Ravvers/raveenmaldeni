@@ -18,15 +18,15 @@ body,
 }
 
 #header {
-	margin: auto;
-	width: 300px;
+	margin: 0 auto;
+	width: 350px;
 }
 
 .header-directory {
 	padding-top: 5vh;
 	padding-bottom: 2%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 #header a {
@@ -115,6 +115,14 @@ body,
 }
 
 @media screen and (width <= 400px) {
+	#header {
+		width: 300px;
+	}
+
+	.header-directory {
+		justify-content: space-around;
+	}
+
 	#projects {
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	}
