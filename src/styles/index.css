@@ -87,6 +87,7 @@ body,
 .project-tile-image {
 	width: 100%;
 	transition: all 0.75s ease;
+	border-radius: 20px;
 }
 
 .project-status {
