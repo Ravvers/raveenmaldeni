@@ -27,7 +27,7 @@ export const Socials = () => {
 			<SocialLink
 				SocialIcon={GitHubIcon}
 				link={externalLinks.github}
-				iconStyle={getIconStyles(theme.footer.icon.onHover.gitHub)}
+				iconStyle={getIconStyles(theme.footer.icon.onHover.github)}
 				iconSize={fontSizeEm.footer.socialIcon}
 			/>
 			<SocialLink

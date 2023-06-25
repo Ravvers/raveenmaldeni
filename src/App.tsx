@@ -3,17 +3,22 @@ import { Outlet } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import { theme } from "./styles/colourPalette";
 import { Header } from "./components/Header/Header";
+import { PageContent } from "./components/PageContent/PageContent";
 
 function App() {
 	return (
 		<div
 			style={{
 				background: theme.body.background,
-				minHeight: "100vh"
+				minHeight: "100vh",
+				display: "flex",
+				flexDirection: "column"
 			}}
 		>
 			<Header />
-			<Outlet />
+			<PageContent>
+				<Outlet />
+			</PageContent>
 			<Footer />
 		</div>
 	);
