@@ -23,7 +23,7 @@ const paperguin: Project = {
 	description: "Brand that will represent my future projects",
 	status: planningPhase,
 	tileImageSrc: `${tileImageBasePath}paperguin.svg`,
-	tileBackgroundColor: "#FFFFFF"
+	tileBackgroundColor: "#ACF1FB"
 };
 
 const randomforme: Project = {
