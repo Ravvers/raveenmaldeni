@@ -37,8 +37,9 @@ const randomforme: Project = {
 const listApp: Project = {
 	name: "listApp",
 	displayName: "List App",
-	description: "A list-taking mobile app that provides the user more control",
-	status: planningPhase,
+	description:
+		"Collaborative project for a list-taking mobile app that provides the user more control for customisation",
+	status: inDesignPhase,
 	tileImageSrc: `${tileImageBasePath}listApp.jpg`
 };
 
