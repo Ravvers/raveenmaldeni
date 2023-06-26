@@ -25,7 +25,7 @@ export const About = () => {
 					<img
 						id="about-page-raveen-face"
 						src={`${tileImageBasePath}raveenFace.svg`}
-						alt="raveen-face"
+						alt="Raveen smiling"
 					/>
 				</div>
 
