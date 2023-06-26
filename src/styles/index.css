@@ -73,6 +73,19 @@ body,
 	margin: auto;
 }
 
+#about-page-content {
+	font-size: 1.5em;
+	margin: auto;
+	width: 60%;
+	text-align: justify;
+}
+
+#about-page-raveen-face {
+	border-radius: 20%;
+	width: 100%;
+	max-width: 500px;
+}
+
 #projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -114,6 +127,11 @@ body,
 @media screen and (width <= 700px) {
 	body {
 		font-size: 0.9em;
+	}
+
+	#about-page-content {
+		width: 80%;
+		text-align: left;
 	}
 
 	.page-content {

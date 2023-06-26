@@ -5,7 +5,7 @@ import {
 	planningPhase
 } from "../../models/Project";
 
-const tileImageBasePath = "/assets/img/";
+export const tileImageBasePath = "/assets/img/";
 
 const theorycrafter: Project = {
 	name: "theoryCrafter",
