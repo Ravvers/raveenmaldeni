@@ -5,7 +5,7 @@ import {
 	planningPhase
 } from "../../models/Project";
 
-const tileImageBasePath = "/assets/img/";
+export const tileImageBasePath = "/assets/img/";
 
 const theorycrafter: Project = {
 	name: "theoryCrafter",
@@ -23,7 +23,7 @@ const paperguin: Project = {
 	description: "Brand that will represent my future projects",
 	status: planningPhase,
 	tileImageSrc: `${tileImageBasePath}paperguin.svg`,
-	tileBackgroundColor: "#FFFFFF"
+	tileBackgroundColor: "#ACF1FB"
 };
 
 const randomforme: Project = {
@@ -37,8 +37,9 @@ const randomforme: Project = {
 const listApp: Project = {
 	name: "listApp",
 	displayName: "List App",
-	description: "A list-taking mobile app that provides the user more control",
-	status: planningPhase,
+	description:
+		"Collaborative project for a list-taking mobile app that provides the user more control for customisation",
+	status: inDesignPhase,
 	tileImageSrc: `${tileImageBasePath}listApp.jpg`
 };
 

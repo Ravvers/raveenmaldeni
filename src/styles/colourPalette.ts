@@ -34,7 +34,8 @@ export const theme = {
 				inDesign: colourPalette.lightBlue,
 				inDevelopment: colourPalette.lightYellow
 			}
-		}
+		},
+		highlight: colourPalette.darkPurple
 	},
 	footer: {
 		text: colourPalette.black,
