@@ -1,6 +1,7 @@
 import {
 	Project,
 	inDesignPhase,
+	inDevelopmentPhase,
 	inactivePhase,
 	planningPhase
 } from "../../models/Project";
@@ -30,7 +31,7 @@ const randomforme: Project = {
 	name: "randomforme",
 	displayName: "randomfor.me",
 	description: "Web app for random number generation and sorting",
-	status: inDesignPhase,
+	status: inDevelopmentPhase,
 	tileImageSrc: `${tileImageBasePath}randomforme.jpg`
 };
 
@@ -53,9 +54,9 @@ const mobileGame: Project = {
 };
 
 export const projectData: Project[] = [
-	theorycrafter,
-	paperguin,
 	randomforme,
 	listApp,
-	mobileGame
+	paperguin,
+	mobileGame,
+	theorycrafter
 ];

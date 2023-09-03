@@ -35,6 +35,7 @@ body,
 
 #footer {
 	margin-top: auto;
+	padding-top: 4em;
 }
 
 .footer-directory {
@@ -162,5 +163,9 @@ body,
 
 	body {
 		font-size: 0.7em;
+	}
+
+	#footer {
+		padding-top: 2em;
 	}
 }
