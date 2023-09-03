@@ -38,16 +38,17 @@ export const About = () => {
 				</p>
 				<p>
 					In my spare time I like to work on projects that are shared
-					here. The purpose of these projects are to gain exposure in
-					a wide variety of problems throughout the development
-					process so that I can <HighlightText>learn</HighlightText>{" "}
-					about all parts of project development. In addition to this,
-					I want to be involved in creating something that makes a{" "}
+					here. The purpose of these projects are to gain exposure to
+					a wide variety of engineering and design problems throughout
+					the development process so that I can{" "}
+					<HighlightText>learn</HighlightText> about all aspects of
+					project development. In addition to this, I want to be
+					involved in creating something that makes a{" "}
 					<HighlightText>difference</HighlightText> in others' lives.
 				</p>
 				<p>
 					One of my main goals is to design and create my own
-					videogame as they have been a large part of my life. This
+					video-game as they have been a large part of my life. This
 					has finally given me the confidence to explore art and
 					drawing, so I'll be sharing some of that here too!
 				</p>
