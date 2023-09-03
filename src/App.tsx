@@ -19,6 +19,8 @@ function App() {
 			<PageContent>
 				<Outlet />
 			</PageContent>
+			{/* Separation between PageContent and the Footer */}
+			<div style={{ paddingBottom: "4em" }} />
 			<Footer />
 		</div>
 	);

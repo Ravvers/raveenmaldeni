@@ -20,20 +20,24 @@ export const Directory = (props: DirectoryProps) => {
 		>
 			{Object.entries(routeMap).map((route) => {
 				return (
-					<LinkComponent
-						key={route[0]}
-						{...{
-							...props.linkStyle,
-							...css({
-								".active": {
-									color: theme.header.linkOnCurrentPage
-								}
-							})
-						}}
-						to={route[1].path}
+					<span
+						style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
 					>
-						{route[1].navigationDisplayName}
-					</LinkComponent>
+						<LinkComponent
+							key={route[0]}
+							{...{
+								...props.linkStyle,
+								...css({
+									".active": {
+										color: theme.header.linkOnCurrentPage
+									}
+								})
+							}}
+							to={route[1].path}
+						>
+							{route[1].navigationDisplayName}
+						</LinkComponent>
+					</span>
 				);
 			})}
 		</div>
